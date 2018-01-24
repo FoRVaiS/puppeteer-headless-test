@@ -16,7 +16,6 @@ const { logger } = config;
         }
 
         logger.info(`Node ${process.version}`);
-        logger.info('Puppeteer v1.0.0');
         logger.info(`Running Puppeteer ${headless ? 'Headless' : 'Full'}: ${timeTotal / 10}ms average load time.`)
 
         await browser.close();
